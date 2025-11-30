@@ -3,6 +3,10 @@
 	"displayName": "Orchestra",
 	"description": "Orchestra language syntax highlighting",
 	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cubedhuang/orchestra-extension.git"
+	},
 	"scripts": {
 		"deploy": "vsce publish"
 	},
