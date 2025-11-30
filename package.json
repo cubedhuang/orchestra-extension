@@ -1,0 +1,41 @@
+{
+	"name": "orchestra",
+	"displayName": "Orchestra",
+	"description": "Orchestra language syntax highlighting",
+	"version": "0.1.0",
+	"scripts": {
+		"deploy": "vsce publish"
+	},
+	"engines": {
+		"vscode": "^1.106.1"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "orchestra",
+				"aliases": [
+					"Orchestra",
+					"orchestra"
+				],
+				"extensions": [
+					".orch",
+					".orchestra"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "orchestra",
+				"scopeName": "source.orch",
+				"path": "./syntaxes/orchestra.tmLanguage.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@vscode/vsce": "^3.7.1"
+	}
+}
