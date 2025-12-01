@@ -20,9 +20,16 @@
 				{
 					"name": "comment.block.orchestra",
 					"begin": "/\\*",
-					"end": "\\*/"
+					"end": "\\*/",
+					"patterns": [{ "include": "#comment_block" }]
 				}
 			]
+		},
+		"comment_block": {
+			"name": "comment.block.orchestra",
+			"begin": "/\\*",
+			"end": "\\*/",
+			"patterns": [{ "include": "#comment_block" }]
 		},
 		"keywords": {
 			"patterns": [
